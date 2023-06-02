@@ -11,11 +11,6 @@ buttonYes.addEventListener('click',()=>{
     title.textContent = 'Você fez a melhor escolha!';
     title.style.fontSize = '3rem';
 });
-buttonNo.addEventListener('click',()=>{
-    let randomArray = parseInt(Math.random() * positions.length);
-    this.style.transform = `translateY(${positions[randomArray]}px)`;
-    this.style.transition = 'ease .1s';
-})
 function heartBeat(){
     if(heart.style.width == '320px' && heart.style.height == '300px'){
         heart.style.width = '270px';
